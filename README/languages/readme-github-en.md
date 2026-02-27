@@ -76,7 +76,7 @@ So I decided to build a dedicated launcher that’s practical for real-world use
 
 ## 🏓 How to use
 
-You can explore the program's features, interface, and instructions by following this [link](https://github.com/nondeletable/ComfyLauncher/tree/master/README/user_manual/user_manual_en.md).
+You can explore the program's features, interface, and instructions by following this [link](https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual_en.md).
 &nbsp;
 &nbsp;
 
