@@ -38,21 +38,21 @@ def launch_app():
         setup = SetupWindow()
         result = setup.exec()
 
-        # Cancel / крестик -> это выход из программы
+        # Cancel
         if result != QDialog.DialogCode.Accepted:
             sys.exit(0)
 
-        # пользователь мог выбрать путь — перечитываем заново
+        # the user could choose the path - let's reread it again
         comfy_path = get_comfyui_path()
         if not comfy_path or not comfy_exists(comfy_path):
-            # на всякий случай: если окно закрылось "ОК", но путь так и не появился
+            # just in case: if the window closed with "OK", but the path still didn't appear
             sys.exit(0)
 
     # ── BUILD MANAGER (ВСЕГДА) ─────────────────────────────
     data = load_user_config()
     builds = data.get("builds", []) or []
 
-    # если по какой-то причине builds пустой — уходим в setup
+    # If for some reason builds is empty, go to setup
     if not builds:
         setup = SetupWindow()
         result = setup.exec()
