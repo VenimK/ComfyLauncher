@@ -5,11 +5,11 @@
 <h2>ComfyLauncher</h2>
 Navegador inteligente, rápido y ligero para ComfyUI.
   <p>
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/readme-github-en.md">English </a> |  
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/readme-github-de.md">Deutsch </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/readme-github-es.md">Español </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/readme-github-cn.md">简体中文 </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/readme-github-ru.md">Русский </a>
+    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/readme-github-en.md">English </a> |  
+    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/readme-github-de.md">Deutsch </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/readme-github-es.md">Español </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/readme-github-cn.md">简体中文 </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/readme-github-ru.md">Русский </a>
     <br>
     <br>
     <img src="/README/screenshots/render.png" alt="ComfyLauncher UI" width="96%"/>
@@ -84,7 +84,7 @@ Así que decidí crear un launcher dedicado que sea práctico para el uso real. 
 ## 🏓 Cómo usarlo
 
 Puedes explorar las funciones del programa, la interfaz y las instrucciones a través de este  
-[enlace](https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual-es.md).
+[enlace](https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual_es.md).
 
 &nbsp;
 &nbsp;
