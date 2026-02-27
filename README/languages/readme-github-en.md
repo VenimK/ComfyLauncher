@@ -5,11 +5,11 @@
 <h2>ComfyLauncher</h2>
 Smart, fast and lightweight browser for ComfyUI.
   <p>
-    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-en.md">English </a> |  
-    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-de.md">Deutsch </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-es.md">Español </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-cn.md">简体中文 </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-ru.md">Русский </a>
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-en.md">English </a> |  
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-de.md">Deutsch </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-es.md">Español </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-cn.md">简体中文 </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-ru.md">Русский </a>
     <br>
     <br>
     <img src="/README/screenshots/16-build-selector.png" alt="ComfyLauncher UI" width="46%"/>
