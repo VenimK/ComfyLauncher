@@ -5,11 +5,11 @@
 <h2>ComfyLauncher</h2>
 智能、快速且轻量的 ComfyUI 专用浏览器。
   <p>
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/readme-github-en.md">English </a> |  
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/readme-github-de.md">Deutsch </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/readme-github-es.md">Español </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/readme-github-cn.md">简体中文 </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/readme-github-ru.md">Русский </a>
+    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/readme-github-en.md">English </a> |  
+    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/readme-github-de.md">Deutsch </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/readme-github-es.md">Español </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/readme-github-cn.md">简体中文 </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/readme-github-ru.md">Русский </a>
     <br>
     <br>
     <img src="/README/screenshots/render.png" alt="ComfyLauncher UI" width="96%"/>
@@ -85,7 +85,7 @@ Comfy 的 Standalone 版本自带 Launcher，用起来非常舒服。所以我�
 ## 🏓 使用方法
 
 你可以通过以下链接查看程序功能、界面介绍及使用说明：  
-[使用手册](https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual-cn.md)
+[使用手册](https://github.com/nondeletable/ComfyLauncher/tree/master/README/user_manual/user_manual_cn.md)
 &nbsp;
 &nbsp;
 

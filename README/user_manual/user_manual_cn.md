@@ -6,11 +6,11 @@
 ComfyLauncher 的截图和分步使用说明。<br>
 本手册提供多种语言版本。请在下方选择你的语言。
   <p>
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual-en.md">English </a> |  
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual-de.md">Deutsch </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual-es.md">Español </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual-cn.md">简体中文 </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual-ru.md">Русский </a>
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual_en.md">English </a> |  
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual_de.md">Deutsch </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual_es.md">Español </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual_cn.md">简体中文 </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual_ru.md">Русский </a>
     <br>
     <br>
   </p>
