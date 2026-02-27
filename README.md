@@ -5,10 +5,10 @@
 <h2>ComfyLauncher</h2>
 Smart, fast and lightweight browser for ComfyUI.
   <p>
-    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-en.md">English </a> |  
-    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-de.md">Deutsch </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-es.md">Español </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-cn.md">简体中文 </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-en.md">English </a> |  
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-de.md">Deutsch </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-es.md">Español </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-cn.md">简体中文 </a> |
     <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-ru.md">Русский </a>
     <br>
     <br>
@@ -76,7 +76,7 @@ So I decided to build a dedicated launcher that’s practical for real-world use
 
 ## 🏓 How to use
 
-You can explore the program's features, interface, and instructions by following this [link](https://github.com/nondeletable/ComfyLauncher/tree/master/README/user_manual/user_manual_en.md).
+You can explore the program's features, interface, and instructions by following this [link](https://github.com/nondeletable/ComfyLauncher/blob/master/README/user_manual/user_manual_en.md).
 &nbsp;
 &nbsp;
 
