@@ -84,7 +84,7 @@ Así que decidí crear un launcher dedicado que sea práctico para el uso real. 
 ## 🏓 Cómo usarlo
 
 Puedes explorar las funciones del programa, la interfaz y las instrucciones a través de este  
-[enlace](https://github.com/nondeletable/ComfyLauncher/tree/master/README/user_manual/user_manual-en.md).
+[enlace](https://github.com/nondeletable/ComfyLauncher/tree/master/README/user_manual/user_manual-es.md).
 
 &nbsp;
 &nbsp;

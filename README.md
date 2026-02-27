@@ -9,7 +9,7 @@ Smart, fast and lightweight browser for ComfyUI.
     <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-de.md">Deutsch </a> |
     <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-es.md">Español </a> |
     <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-cn.md">简体中文 </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-ru.md">Русский </a>
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-ru.md">Русский </a>
     <br>
     <br>
     <img src="/README/screenshots/16-build-selector.png" alt="ComfyLauncher UI" width="46%"/>
@@ -43,22 +43,22 @@ So I decided to build a dedicated launcher that’s practical for real-world use
     Uses little RAM, which is important for mid-range machines or resource-hungry workloads. It doesn’t include the extra overhead you typically get with a standard browser, so it starts up quickly.
     30% lower RAM usage than vanilla Chrome (idle) - tested on Win10 and Win11.
 &nbsp;
- 
+
 - **Option to show or hide the CMD window.**  
-    If the terminal window running in the background and cluttering your taskbar is annoying, you can hide it.  
+    If the terminal window running in the background and cluttering your taskbar is annoying, you can hide it.
 &nbsp;
- 
+
 - **Built-in console.**  
-    When the CMD window is disabled, the launcher streams the same output into a dedicated UI console (the console button appears automatically). This way you can hide the terminal without losing detailed monitoring.  
+    When the CMD window is disabled, the launcher streams the same output into a dedicated UI console (the console button appears automatically). This way you can hide the terminal without losing detailed monitoring.
 &nbsp;
- 
+
 - **Quick access controls and commonly used server actions.**
     - Open the **Output** directory and the **ComfyUI** directory
     - **Refresh UI**
     - **Restart** - start and restart the server
-    - **Stop** - fully stop the server  
+    - **Stop** - fully stop the server
 &nbsp;
- 
+
 - **Support for ComfyUI’s default themes** to keep the interface consistent.
 - **Server status indicator** - Online, Offline, Restarting.
 - **And more.**
@@ -76,7 +76,7 @@ So I decided to build a dedicated launcher that’s practical for real-world use
 
 ## 🏓 How to use
 
-You can explore the program's features, interface, and instructions by following this [link](https://github.com/nondeletable/ComfyLauncher/tree/master/README/user_manual/user_manual-en.md).
+You can explore the program's features, interface, and instructions by following this [link](https://github.com/nondeletable/ComfyLauncher/tree/master/README/user_manual/user_manual_en.md).
 &nbsp;
 &nbsp;
 
