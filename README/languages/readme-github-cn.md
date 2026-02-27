@@ -5,10 +5,10 @@
 <h2>ComfyLauncher</h2>
 智能、快速且轻量的 ComfyUI 专用浏览器。
   <p>
-    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-de.md">Deutsch </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-es.md">Español </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-cn.md">简体中文 </a> |
-    <a href="https://github.com/nondeletable/ComfyLauncher/tree/master/README/languages/readme-github-ru.md">Русский </a>
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-de.md">Deutsch </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-es.md">Español </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-cn.md">简体中文 </a> |
+    <a href="https://github.com/nondeletable/ComfyLauncher/blob/master/README/languages/readme-github-ru.md">Русский </a>
     <br>
     <br>
     <img src="/README/screenshots/render.png" alt="ComfyLauncher UI" width="96%"/>
