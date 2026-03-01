@@ -17,8 +17,18 @@ from ui.error_page import ErrorWidget, ErrorScreen
 from core.errors import ERRORS
 from version import __version__
 from ui.splash_video import LauncherSplashVideo
-from ui.webview2_widget import WebView2Widget
 from utils.logger import log_event
+from utils.platform_utils import is_windows, open_file_manager
+from utils.network_utils import get_server_url
+
+# Import appropriate browser widget based on platform
+if is_windows():
+    try:
+        from ui.webview2_widget import WebView2Widget as BrowserWidget
+    except ImportError:
+        from ui.webengine_widget import WebEngineWidget as BrowserWidget
+else:
+    from ui.webengine_widget import WebEngineWidget as BrowserWidget
 from utils.update_checker import UpdateService
 from launcher import (
     ensure_comfyui_running,
@@ -40,7 +50,7 @@ class StartingWidget(QWidget):
         layout = QVBoxLayout(self)
         layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        label = QLabel("🚀 Запуск ComfyUI…")
+        label = QLabel("🚀 Starting ComfyUI...")
         label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         label.setStyleSheet("font-size: 18px; color: #cccccc;")
 
@@ -187,7 +197,10 @@ class ComfyBrowser(QMainWindow):
         log_event("🟥 ComfyUI completely stopped by the user.")
 
     def open_folder(self):
-        os.startfile(self.comfyui_path)
+        try:
+            open_file_manager(self.comfyui_path)
+        except Exception as e:
+            log_event(f"⚠️ Failed to open folder: {e}")
 
     def open_settings(self):
         log_event("🧩 Opening settings window...")
@@ -246,7 +259,10 @@ class ComfyBrowser(QMainWindow):
         output_dir = os.path.join(comfy_path, "output")
 
         if os.path.exists(output_dir):
-            os.startfile(output_dir)
+            try:
+                open_file_manager(output_dir)
+            except Exception as e:
+                log_event(f"⚠️ Failed to open output folder: {e}")
         else:
             log_event(f"⚠️ Output folder not found: {output_dir}")
 
@@ -410,8 +426,9 @@ class ComfyBrowser(QMainWindow):
             self.splash.finish()
             self.splash = None
 
-        url = f"http://127.0.0.1:{COMFYUI_PORT}"
-        self.browser = WebView2Widget(url)
+        url = get_server_url(COMFYUI_PORT)
+        log_event(f"🌐 Connecting to ComfyUI at {url}")
+        self.browser = BrowserWidget(url)
         self.browser.loaded.connect(self.on_load_finished)
 
         # Replace the preloader with a browser

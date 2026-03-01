@@ -1,9 +1,15 @@
 import sys
 import os
 
+# Set Qt environment variables (cross-platform)
 os.environ["QT_MEDIA_BACKEND"] = "ffmpeg"
 os.environ["QT_FFMPEG_HWACCEL"] = "none"
 # os.environ["QSG_RHI_BACKEND"] = "software"
+
+# macOS-specific: Enable high DPI support
+if sys.platform == "darwin":
+    os.environ["QT_MAC_WANTS_LAYER"] = "1"
+    os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
 
 from PyQt6.QtWidgets import QApplication, QToolTip, QDialog
 from PyQt6.QtGui import QFont, QIcon

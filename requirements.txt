@@ -1,8 +1,10 @@
-PyQt6==6.6.1
-PyQt6-Qt6==6.6.1
-psutil==7.1.0
-requests==2.32.4
-PyInstaller==6.10.0
-pythonnet==3.0.5
-pywin32==311; sys_platform == 'win32'
-pyinstaller-hooks-contrib==2025.9
+PyQt6>=6.6.0
+PyQt6-WebEngine>=6.6.0
+psutil>=5.9.0
+requests>=2.31.0
+PyInstaller>=6.15.0
+pythonnet>=3.0.0; sys_platform == 'win32'
+pywin32>=306; sys_platform == 'win32'
+pyinstaller-hooks-contrib>=2024.0
+pyobjc-framework-Cocoa>=10.0; sys_platform == 'darwin'
+pyobjc-framework-WebKit>=10.0; sys_platform == 'darwin'
