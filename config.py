@@ -99,7 +99,7 @@ DEFAULT_USER_CONFIG = {
     "browser_patch_registry": {},
     "builds": [],
     "last_used_build_id": "",
-    "startup_mode": "cpu",  # cpu/gpu/nvidia (потом привяжешь к настройкам)
+    "startup_mode": "cpu",
     "ui": {
         "show_manager_on_start": True,
     },
@@ -107,6 +107,19 @@ DEFAULT_USER_CONFIG = {
     "last_update_check": None,
     "update_interval_hours": 48,
     "updates_enabled": True,
+    "remote_server": {
+        "enabled": False,
+        "host": "",
+        "port": 8188,
+    },
+    "performance": {
+        "console_buffer_lines": 1000,
+        "console_max_line_length": 1000,
+        "server_check_interval": 1.0,
+        "enable_splash_video": True,
+        "low_memory_mode": False,
+        "log_resource_usage": False,
+    },
 }
 
 

@@ -426,7 +426,17 @@ class ComfyBrowser(QMainWindow):
             self.splash.finish()
             self.splash = None
 
-        url = get_server_url(COMFYUI_PORT)
+        # Check if remote server is configured
+        cfg = load_user_config()
+        remote_config = cfg.get("remote_server", {})
+        
+        if remote_config.get("enabled") and remote_config.get("host"):
+            remote_host = remote_config.get("host")
+            remote_port = remote_config.get("port", COMFYUI_PORT)
+            url = get_server_url(remote_port, remote_host)
+        else:
+            url = get_server_url(COMFYUI_PORT)
+        
         log_event(f"🌐 Connecting to ComfyUI at {url}")
         self.browser = BrowserWidget(url)
         self.browser.loaded.connect(self.on_load_finished)

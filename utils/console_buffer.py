@@ -5,6 +5,7 @@ class ConsoleBuffer:
     """In-memory buffer for ComfyUI console output."""
 
     _lines: List[str] = []
+    _max_lines: int = 10000
 
     @classmethod
     def add(cls, text: str) -> None:
@@ -12,8 +13,8 @@ class ConsoleBuffer:
             return
         cls._lines.append(text)
 
-        # Let's limit the volume so it doesn't grow endlessly
-        if len(cls._lines) > 10000:
+        # Keep a bounded in-memory log.
+        if len(cls._lines) > cls._max_lines:
             cls._lines = cls._lines[-8000:]
 
     @classmethod

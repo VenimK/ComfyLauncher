@@ -2,7 +2,8 @@ from PyQt6.QtCore import QObject, pyqtSignal
 import time
 
 from launcher import ensure_comfyui_running, is_port_open
-from config import COMFYUI_PORT, MAX_WAIT_TIME
+from config import COMFYUI_PORT, MAX_WAIT_TIME, load_user_config
+from utils.network_utils import is_port_listening
 
 
 class ComfyLoaderWorker(QObject):
@@ -32,6 +33,14 @@ class ComfyLoaderWorker(QObject):
         try:
             self.started.emit()
 
+            cfg = load_user_config()
+            remote_config = cfg.get("remote_server", {})
+            remote_enabled = bool(
+                remote_config.get("enabled") and remote_config.get("host")
+            )
+            remote_host = str(remote_config.get("host", "")).strip()
+            remote_port = int(remote_config.get("port", COMFYUI_PORT))
+
             # 1️⃣ Launch ComfyUI (if it's already running, the function will figure it out automatically)
             ensure_comfyui_running(self.comfy_path)
 
@@ -39,7 +48,12 @@ class ComfyLoaderWorker(QObject):
             start_time = time.time()
 
             while self._running:
-                if is_port_open(COMFYUI_PORT):
+                if remote_enabled:
+                    ready = is_port_listening(remote_port, remote_host)
+                else:
+                    ready = is_port_open(COMFYUI_PORT)
+
+                if ready:
                     self.ready.emit()
                     return
 

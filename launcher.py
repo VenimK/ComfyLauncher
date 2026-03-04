@@ -196,8 +196,21 @@ def ensure_comfyui_running(comfy_path: str, port: int = 8188):
     2) Checks if main.py is patched (auto-browser is disabled).
     3) If necessary, patches and updates user_config.json.
     4) Launches ComfyUI (via bat or directly).
+    
+    Note: If remote server is configured, this function will skip local startup.
     """
     global _comfy_process
+    
+    # Check if remote server is configured
+    cfg = load_user_config()
+    remote_config = cfg.get("remote_server", {})
+    
+    if remote_config.get("enabled") and remote_config.get("host"):
+        log_event("🌐 Remote server mode enabled - skipping local ComfyUI startup")
+        remote_host = remote_config.get("host")
+        remote_port = remote_config.get("port", 8188)
+        log_event(f"🔗 Will connect to {remote_host}:{remote_port}")
+        return
 
     # --- Browser Check and Patch -------------------------------------
     main_py = os.path.join(comfy_path, "main.py")
@@ -468,12 +481,15 @@ def stop_comfyui_hard(_grace_period=5):
     if not killed:
         for proc in psutil.process_iter(["pid", "name", "cmdline"]):
             try:
-                cmd = " ".join(proc.info["cmdline"]).lower()
+                cmdline = proc.info.get("cmdline")
+                if not cmdline:
+                    continue
+                cmd = " ".join(cmdline).lower()
                 if "comfyui" in cmd or "main.py" in cmd:
                     log_event(f"💀 Force quit ComfyUI (PID {proc.pid})")
                     proc.kill()
                     killed = True
-            except (psutil.NoSuchProcess, psutil.AccessDenied):
+            except (psutil.NoSuchProcess, psutil.AccessDenied, TypeError):
                 continue
 
     if killed:

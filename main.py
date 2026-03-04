@@ -38,21 +38,28 @@ def launch_app():
         """
     )
 
-    # ── FIRST SETUP ─────────────────────────────
-    comfy_path = get_comfyui_path()
-    if not comfy_path or not comfy_exists(comfy_path):
-        setup = SetupWindow()
-        result = setup.exec()
-
-        # Cancel
-        if result != QDialog.DialogCode.Accepted:
-            sys.exit(0)
-
-        # the user could choose the path - let's reread it again
+    # ── INITIAL SETUP (IF NEEDED) ──────────────────────────
+    # Check if remote server is configured
+    cfg = load_user_config()
+    remote_config = cfg.get("remote_server", {})
+    is_remote = remote_config.get("enabled") and remote_config.get("host")
+    
+    # Skip setup if remote server is enabled
+    if not is_remote:
         comfy_path = get_comfyui_path()
         if not comfy_path or not comfy_exists(comfy_path):
-            # just in case: if the window closed with "OK", but the path still didn't appear
-            sys.exit(0)
+            setup = SetupWindow()
+            result = setup.exec()
+
+            # Cancel
+            if result != QDialog.DialogCode.Accepted:
+                sys.exit(0)
+
+            # the user could choose the path - let's reread it again
+            comfy_path = get_comfyui_path()
+            if not comfy_path or not comfy_exists(comfy_path):
+                # just in case: if the window closed with "OK", but the path still didn't appear
+                sys.exit(0)
 
     # ── BUILD MANAGER (ВСЕГДА) ─────────────────────────────
     data = load_user_config()

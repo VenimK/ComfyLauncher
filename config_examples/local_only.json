@@ -1,0 +1,29 @@
+{
+  "ask_on_exit": true,
+  "exit_mode": "always_stop",
+  "browser_patch_registry": {},
+  "builds": [
+    {
+      "id": "local-comfyui",
+      "name": "ComfyUI",
+      "path": "/path/to/ComfyUI",
+      "icon_id": "default",
+      "startup_mode": "auto"
+    }
+  ],
+  "last_used_build_id": "local-comfyui",
+  "comfyui_path": "/path/to/ComfyUI",
+  "startup_mode": "auto",
+  "ui": {
+    "show_manager_on_start": true
+  },
+  "update_etag": null,
+  "last_update_check": null,
+  "update_interval_hours": 48,
+  "updates_enabled": true,
+  "remote_server": {
+    "enabled": false,
+    "host": "",
+    "port": 8188
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "ask_on_exit": true,
+  "exit_mode": "always_stop",
+  "browser_patch_registry": {},
+  "builds": [
+    {
+      "id": "remote_server",
+      "name": "Remote ComfyUI Server",
+      "path": "",
+      "icon_id": "default",
+      "startup_mode": "auto"
+    }
+  ],
+  "last_used_build_id": "remote_server",
+  "comfyui_path": "",
+  "startup_mode": "auto",
+  "ui": {
+    "show_manager_on_start": false
+  },
+  "update_etag": null,
+  "last_update_check": null,
+  "update_interval_hours": 48,
+  "updates_enabled": true,
+  "remote_server": {
+    "enabled": true,
+    "host": "192.168.1.100",
+    "port": 8188
+  }
+}

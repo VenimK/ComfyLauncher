@@ -1,0 +1,43 @@
+{
+  "ask_on_exit": true,
+  "exit_mode": "always_stop",
+  "browser_patch_registry": {},
+  "builds": [
+    {
+      "id": "local-dev",
+      "name": "Local Development",
+      "path": "/Users/me/ComfyUI-dev",
+      "icon_id": "default",
+      "startup_mode": "cpu"
+    },
+    {
+      "id": "local-gpu",
+      "name": "Local GPU",
+      "path": "/Users/me/ComfyUI-stable",
+      "icon_id": "default",
+      "startup_mode": "gpu"
+    },
+    {
+      "id": "remote-workstation",
+      "name": "Remote Workstation",
+      "path": "",
+      "icon_id": "default",
+      "startup_mode": "auto"
+    }
+  ],
+  "last_used_build_id": "local-dev",
+  "comfyui_path": "/Users/me/ComfyUI-dev",
+  "startup_mode": "cpu",
+  "ui": {
+    "show_manager_on_start": true
+  },
+  "update_etag": null,
+  "last_update_check": null,
+  "update_interval_hours": 48,
+  "updates_enabled": true,
+  "remote_server": {
+    "enabled": false,
+    "host": "192.168.1.100",
+    "port": 8188
+  }
+}
