@@ -135,7 +135,7 @@ class ComfyBrowser(QMainWindow):
             # If the server is running, we soft-stop it.
             if is_port_open(COMFYUI_PORT):
                 log_event("🟢 Server detected — performing soft stop.")
-                stop_comfyui_hard()
+                stop_comfyui_hard(self.comfyui_path)
             else:
                 log_event("🔴 Server not running — starting fresh.")
 
@@ -191,7 +191,7 @@ class ComfyBrowser(QMainWindow):
         if not reply:
             return
 
-        stop_comfyui_hard()
+        stop_comfyui_hard(self.comfyui_path)
         self.header.status_label.setText("Offline")
         self.header.status_label.setStyleSheet("color: red; font-weight: bold;")
         log_event("🟥 ComfyUI completely stopped by the user.")
@@ -326,7 +326,7 @@ class ComfyBrowser(QMainWindow):
             # YES → stop server + exit
             if choice == "yes":
                 log_event("🟥 User chose: YES — stopping ComfyUI and exiting.")
-                stop_comfyui_hard()
+                stop_comfyui_hard(self.comfyui_path)
                 self._close_settings_if_open()
                 save_user_config(user_config)
                 event.accept()
@@ -352,14 +352,14 @@ class ComfyBrowser(QMainWindow):
         # ─────────────────────────────
         if mode == "always_stop":
             log_event("🟥 Auto mode: always_stop — stopping ComfyUI.")
-            stop_comfyui_hard()
+            stop_comfyui_hard(self.comfyui_path)
 
         elif mode == "never_stop":
             log_event("🟢 Auto mode: never_stop — leaving ComfyUI running.")
 
         else:
             log_event(f"⚠️ Unknown exit mode: '{mode}' — defaulting to always_stop.")
-            stop_comfyui_hard()
+            stop_comfyui_hard(self.comfyui_path)
 
         # Save user config anyway (important!)
         save_user_config(user_config)
